@@ -1,0 +1,16 @@
+.box{
+width: 200px;
+height: 200px;
+background-color: indigo;
+border: 10px solid black;
+
+}
+
+.content{
+
+box-sizing: content-box;
+
+}
+.border{
+    box-sizing: border-box;
+}
