@@ -1,8 +1,9 @@
 .box{
+    
 width: 200px;
 height: 200px;
-background-color: indigo;
-border: 10px solid black;
+background-color: rgb(136, 12, 224);
+border: 20px solid rgb(103, 200, 224);
 
 }
 
