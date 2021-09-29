@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin: 30px 30px 30px 15px;
+    font-size: 48px;
+
+}
+.boton{
+    display: inline-block;
+    padding: 15px 45px;
+    border-radius: 25px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 2px 4px 4px -1px rgb(119,119,119);
+    width: 100px;
+    text-align: center;
+    }
+    .google{
+        background-color: #2297ec;
+    }
+    .yahoo{
+        background-color: #9043f1;
+    }
+    .sesion{
+        background-color: #ea9d2b;
+    }

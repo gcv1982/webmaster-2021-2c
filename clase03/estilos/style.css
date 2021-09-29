@@ -1,0 +1,30 @@
+*{
+    border: 1px solid black;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+
+
+
+h1{
+    color: rgb(231, 93, 196);
+    text-align: center;
+}
+
+a {
+    color: green;
+    text-align: center;
+}
+p{
+    font-size: 22px;
+}
+.text-small {
+    font-size: 15px;
+
+}
+#main-paragraph{
+            background-color: rgb(253, 105, 204);
+}
