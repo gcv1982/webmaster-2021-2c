@@ -1,0 +1,38 @@
+*{
+    box-sizing: content-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    max-width: 760px;
+    margin: 0 auto;
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    transition: transform 5s ease;
+}
+.scale:hover{
+    transform: scale(2);
+    transform-origin: top left;
+}
+.traslate:hover{
+    transform: translateX(50px);
+
+}
+.caja.rotate{
+    transform-origin: top left;
+}
+.rotate:hover{
+    transform: rotate(45deg);
+}
+.circulo{
+    transition: border-radius 4s linear;
+    background-color: 2s ease;
+}
+.circulo:hover{
+    border-radius: 50%;
+    background-color: cornflowerblue;
+}

@@ -1,0 +1,10 @@
+.fondo{
+    width: 800px;
+    height: 20px;
+    background-color: darkgrey;
+    border-radius: 15px;
+}
+.barra{
+    background-color: darkred;
+    height: 20px;
+}
