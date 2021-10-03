@@ -1,0 +1,19 @@
+body{
+    /* esto resetea el margen y lo lleva a cero margen*/
+    margin: 0;
+}
+.container{
+   /* border: 3px solid orange;*/
+    max-width: 768px;
+  /* Para centrar una etiqueta de bloque con un ancho limitado, usamos estas dos propiedades*/
+  
+    /*  margin-left: auto;
+          margin-right: auto;*/
+    /* Atajo para centrar etiquetas de bloque con anchon limitado.*/
+    margin: 0 auto;
+    
+}
+.banner{
+    background-color: orchid;
+    padding: 50px 0;
+}
