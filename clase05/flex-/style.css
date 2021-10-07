@@ -2,6 +2,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  .cards-container {
+    border: 1px solid black;
+    /* Se le aplica a un parent y afecta a sus childs DIRECTOS */
+    display: flex;
+    /*justify-content: flex-end;*/ /* Alineo sobre el eje x, hacia el final del contenedor */
+    /* justify-content: center; */
+    justify-content: space-between;
+  
+  }
+  
   .card {
     width: 340px;
     border: 1px solid rgba(0,0,0,.1);
@@ -42,30 +52,3 @@ body {
     text-align: center;
     /* border: 1px solid black; */
   }
-  
-  
-  /* Colores */
-  
-  /* Con témperas, mezclamos colores de pinturas.
-  Con pixeles hacemos lo mismo entre los colores permitidos con luces.
-  R = RED 
-  G = GREEN
-  B = BLUE
-  rgb(V1, V2, V3)
-  V1 = R | 0 a 255
-  V2 = G | 0 a 255
-  V3 = B | 0 a 255
-  0 = NADA
-  255 = FULL COLOR
-  rba(R,G,B);
-  rgba(255, 0, 0); => ROJO
-  rgba(0, 255, 0); => VERDE
-  rgba(0, 0, 255); => AZUL
-  Combinación de valores, me dan todos los colores.
-  ///// ALPHA = Transparencias
-  rgba(V1,V2,V3,ALPHA)
-  ALPHA | 0 a 1
-  Siendo 0 => Transparente
-  Siendo 1 => Opaco (Se ve al 100%)
-  */
-  

@@ -1,48 +1,127 @@
-*{
+*{ 
     box-sizing: border-box;
-}
-body{
-    background-color: rgb(5, 5, 5);
+  }
+  
+  body {
+    background-color: rgb(26, 26, 26);
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 80px;
-}
-.container{
-
+  }
+  
+  /* Utils */
+  .container {
     margin: 0 auto;
-}
-.container .xs {
+  }
+  
+  /* El container que tiene a su vez la clase xs */
+  .container.xs {
     max-width: 70px;
-}
-
-.container.md{
-    max-width: 798px ;
-}
-.main-nav{ background-color: white;
+  } 
+  
+  .container.md {
+    max-width: 768px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  
+  /* Main Nav */
+  .main-nav {
+    /* Cuando le dimos position fixed a la barra, esta salió del flujo por defecto y perdió su ancho. Por eso tenemos que devolver el width del 100% */
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-
-}
-.main-nav ul{
-    display: flex;justify-content: center;
-}
-.main-nav a{
-    padding: 10px;
-    color: brown;
+    z-index: 2;
+    width: 100%; /* Devolvemos el 100% del width */
+    background-color: white;
+    padding: 8px 0;
+  }
+  
+  .main-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-nav a {
     display: inline-block;
+    padding: 10px;
+    color: #09d892;
     text-decoration: none;
-}
-.main-nav  a:hover{
+  }
+  
+  .main-nav a:hover{
     color: white;
-    background-color: yellowgreen;
-}
-.main-nav .cta{
-    background-color: tomato;
+    background-color: darkolivegreen;
+  }
+  
+  /*Call to Action (Suele ser el botón más importante que termina generando una conversión)*/
+  .main-nav .cta {
+    background-color: #09d892;
     color: white;
     border-radius: 8px;
     padding: 15px 20px;
-}
-p{
+  }
+  
+  p {
     color: white;
-}
+  }
+  
+  .whatsapp{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 60px;
+    /* border: 1px solid white; */
+  }
+  .whatsapp img{
+    width: 60px;
+  }
+  /* .whatsapp img{
+    max-width: 100%;
+  } */
+  
+  .gallery {
+    display: flex;
+  }
+  
+  .pic {
+    padding: 10px;
+    position: relative;
+    /* margin-right: -100px; */
+  }
+  
+  /* .pic:hover {
+    z-index: 1;
+  } */
+  
+  .gallery img {
+    max-width: 100%;
+  }
+  
+  /* El iframe es una etiqueta de línea, para centrarla puedo
+  1. Convertirla en bloque
+  2. Limitarle el ancho
+  3. Centrarla con margin: 0 auto; */
+  
+  iframe {
+    display: block;
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    border: 10px solid white;
+  
+    /* Position relative sirve para mover a un elemento en relación a sí mismo dejando su lugar reservado */
+    /* position: relative;
+    top: -50px; */
+  
+    /* Podemos utilizar márgenes negativos o position relative. Cada opción es distinta y depende del caso particular. */
+    margin-top: -50px;
+    margin-bottom: -50px;
+  
+    position: relative;
+    /* El z-index nos permite determinar la capa en la que se va a manejar un elemento. Se utiliza en conjunto con algún position. */
+    z-index: 1;
+  }

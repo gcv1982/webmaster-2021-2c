@@ -16,30 +16,52 @@
         <input type="text" id="username" name="username" required>
        
         <!-- Una de las formas de asociar el label con el input, es a través del for y id. -->
-    
-    <label>
-        Ingrese su contraseña<input type="password" name="pass" required>
-    </label>
-        
-    <label>
-        Ingrese su telefono
-        <input type="tel" name="phone" required>
-    </label>
+    <div class="form-group">
 
-    <label>
-        Ingrese su edad
-        <input type="number" placeholder="Ingrese su edad" name="age" required>
-    </label>
+        <label>
+            Ingrese su contraseña<input type="password" name="pass" required>
+        </label>
+    </div>
+   <div class="form-group">
+
+       <label>
+           Ingrese su telefono
+           <input type="tel" name="phone" required>
+       </label>
+   </div>     
+<div class="form-group">
     
     <label>
-        Ingrese su email
+    Ingrese su edad
+            <input type="number" placeholder="Ingrese su edad" name="age" required>
+    
+          
+</div>
+<label>
+Ingrese su email
         <input type="email" placeholder="
         dirección de email" name="useremail" required>
     </label>
-
+</div>  
+<div class="form-group">
     <textarea name="comment" ></textarea>
+</div>
+<div class="form-group">
+    <label>
+      Seleccione una provincia
+      <select name="provincias">
+        <!-- Los values sin espacios, mayúsculas, ni tildes -->
+        <option value="buenos-aires">Buenos Aires</option>
+        <option value="mendoza">Mendoza</option>
+        <option value="cordoba">Córdoba</option>
+      </select>
+    </label>
+  </div>
+</div>
 
+<div class="form-group">
     <input type="submit" value="Enviar">
+</div>
     
     
     </form>
